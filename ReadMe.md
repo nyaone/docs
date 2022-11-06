@@ -3,11 +3,11 @@ home: true
 heroImage: /assets/logo.png
 background: /assets/bg.png
 actions:
-- text: 邀请加入
-  link: /invite/
+- text: 服务条款
+  link: /tos/
   type: primary
-- text: 合理使用
-  link: /aup/
+- text: 加入我们
+  link: /join/
   type: secondary
 footer: CC-BY-SA-4.0 Licensed | Copyright © 2022 NyaOne
 ---

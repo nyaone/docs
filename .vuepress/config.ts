@@ -9,8 +9,12 @@ export default {
     theme: defaultTheme({
         sidebar: [
             {
-                text: '邀请',
-                link: '/invite/',
+                text: '服务条款',
+                link: '/tos/',
+            },
+            {
+                text: '加入我们',
+                link: '/join/',
             },
             {
                 text: '合理使用公约',
@@ -36,11 +40,11 @@ export default {
                 children: [
                     {
                         text: 'Misskey',
-                        link: '/develop/misskey',
+                        link: '/develop/misskey/',
                     },
                     {
                         text: '周边服务',
-                        link: '/develop/peripheral',
+                        link: '/develop/peripheral/',
                     }
                 ]
             },
