@@ -1,7 +1,6 @@
 ---
 home: true
 heroImage: /assets/logo.png
-background: /assets/bg.png
 actions:
 - text: 服务条款
   link: /tos/
