@@ -25,6 +25,6 @@
 
 Misskey 有内置的文档系统，可以在 [/api-doc](https://nya.one/api-doc) 访问得到，不过请注意不同版本的请求接口可能会有些许变更，当之前的代码不再可用时您可以先尝试排查是否是由站点的版本升级导致。
 
-Misskey 官方提供了 JavaScript / TypeScript 使用的 [misskey.js](https://github.com/misskey-dev/misskey.js) 版本 SDK ，您可以直接使用。
+Misskey 官方提供了 JavaScript / TypeScript 使用的 SDK [misskey.js](https://github.com/misskey-dev/misskey.js) ，您可以直接使用。
 
 另外，本站有时也会有一些我们开发的工具代码（如用于周边服务账号管理的 bot 程式），您可以在 [GitHub/nyaone](https://github.com/nyaone) 得到参考。
