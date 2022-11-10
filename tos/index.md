@@ -37,6 +37,10 @@
 
 请注意，管理员**不会**以任何理由向您索要包括但不仅限于您的真实身份、使用设备、密码、 IP 详细地址、电子邮箱、 API Key 、邀请码和会话密钥等任何隐私信息。请保护好您的这些隐私数据，谨防第三方诈骗，避免对您的人身及财产安全造成损失。当有出现用户仿冒管理员行为时，请及时向我们报告。
 
+## 注册相关说明
+
+请参阅 [加入我们] 所述的信息。
+
 ## 行为规范
 
 请参阅 [合理使用公约] 所述的信息。
@@ -53,6 +57,7 @@
 [Nyawork]: https://nya.work
 [喵窝]: https://nya.one
 [ActivityPub]: https://activitypub.rocks
+[加入我们]: /join/
 [合理使用公约]: /aup/
 [基于 Misskey 平台的周边生态开发]: /develop/peripheral/
 [Nyawork 的隐私政策]: https://nya.work/privacy

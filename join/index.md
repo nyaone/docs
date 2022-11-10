@@ -10,7 +10,7 @@
 
 ## 使用方法
 
-站内用户可以通过私聊 [@invite](https://nya.one/my/messaging/invite) 来获得邀请码。
+站内用户可以通过私聊 [@invite](https://nya.one/my/messaging/invite) 来获得邀请码，以便邀请有需要的用户注册使用。
 
 您可以发送 `邀请` 来获得一个邀请码，邀请一位用户加入本站。
 
