@@ -17,7 +17,7 @@ export default {
                 link: '/join/',
             },
             {
-                text: '合理使用公约',
+                text: '合理使用规约',
                 link: '/aup/',
             },
             {

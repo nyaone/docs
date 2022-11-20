@@ -43,7 +43,7 @@
 
 ## 行为规范
 
-请参阅 [合理使用公约] 所述的信息。
+请参阅 [合理使用规约] 所述的信息。
 
 ## Bot 的使用
 
@@ -58,7 +58,7 @@
 [喵窝]: https://nya.one
 [ActivityPub]: https://activitypub.rocks
 [加入我们]: /join/
-[合理使用公约]: /aup/
+[合理使用规约]: /aup/
 [基于 Misskey 平台的周边生态开发]: /develop/peripheral/
 [Nyawork 的隐私政策]: https://nya.work/privacy
 [离开]: /leave/

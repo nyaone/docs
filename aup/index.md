@@ -1,4 +1,4 @@
-# 合理使用公约 <Badge type="tip" text="AUP" vertical="top" />
+# 合理使用规约 <Badge type="tip" text="AUP" vertical="top" />
 
 ## 内容规范
 
