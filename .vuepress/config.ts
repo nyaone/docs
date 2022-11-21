@@ -25,6 +25,10 @@ export default {
                 link: '/peripheral/',
                 children: [
                     {
+                        text: '邀请管理系统',
+                        link: '/peripheral/join/',
+                    },
+                    {
                         text: 'Matrix 通讯',
                         link: '/peripheral/matrix/',
                     },
