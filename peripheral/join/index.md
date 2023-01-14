@@ -4,7 +4,11 @@
 
 Misskey 本身的邀请模式比较局限，但提供了丰富的 API 接口。所以我们设计开发了这套邀请管理系统，以在本站使用的基础上更好地优化用户的体验。
 
-该系统独立于 Misskey 运行，且不涉及对 Misskey 本身的更改。如您有相关的部署需求，您可以参见镜像在 GitHub 上的源代码：
+该系统独立于 Misskey 运行，且不涉及对 Misskey 本身的更改。如您有相关的部署需求，您可以参见项目仓库：
+
+[邀请管理 - NyaCodes](https://nya.codes/nyaone/join)
+
+或者是 GitHub 上的镜像：
 
 - [前端](https://github.com/nyaone/join-frontend)
 - [后端](https://github.com/nyaone/join-backend)
