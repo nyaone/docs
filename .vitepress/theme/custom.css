@@ -1,0 +1,10 @@
+:root {
+  --vp-c-green: #62b6e7;
+  --vp-c-green-light: #7ebee2;
+  --vp-c-green-lighter: #b7dff7;
+  --vp-c-green-dark: #1e6892;
+  --vp-c-green-darker: #052c42;
+  --vp-c-green-dimm-1: rgba(98, 182, 231, 0.5);
+  --vp-c-green-dimm-2: rgba(98, 182, 231, 0.25);
+  --vp-c-green-dimm-3: rgba(98, 182, 231, 0.05);
+}

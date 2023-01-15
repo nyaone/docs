@@ -4,16 +4,16 @@
   "description": "Documents for NyaOne",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev",
-    "build": "vuepress build"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   },
   "repository": "git@github.com:nyaone/docs.git",
   "author": "Nya Candy <dev@candinya.com>",
   "license": "CC-BY-SA-4.0",
   "private": false,
   "devDependencies": {
-    "@vuepress/plugin-search": "^2.0.0-beta.45",
-    "markdown-it-task-lists": "^2.1.1",
-    "vuepress": "^2.0.0-beta.45"
+    "vitepress": "^1.0.0-alpha.36",
+    "vue": "^3.2.45"
   }
 }
