@@ -35,7 +35,7 @@ export default defineConfig({
         sidebar: {
             '/': [
                 {
-                    text: '基础',
+                    text: '基础规范',
                     collapsible: false,
                     items: [
                         {
@@ -49,7 +49,7 @@ export default defineConfig({
                         {
                             text: '合理使用规约',
                             link: '/aup/',
-                        },
+                        }
                     ],
                 },
                 {
@@ -59,10 +59,40 @@ export default defineConfig({
                         {
                             text: '邀请管理系统',
                             link: '/peripheral/join/',
+                            items: [
+                                {
+                                    text: '使用',
+                                    link: '/peripheral/join/use/',
+                                },
+                                {
+                                    text: '部署',
+                                    link: '/peripheral/join/deploy/',
+                                }
+                            ]
+                        },
+                        {
+                            text: 'MiSSO',
+                            link: '/peripheral/misso/',
+                            items: [
+                                {
+                                    text: '使用',
+                                    link: '/peripheral/misso/use/',
+                                },
+                                {
+                                    text: '部署',
+                                    link: '/peripheral/misso/deploy/',
+                                }
+                            ],
                         },
                         {
                             text: 'Matrix 通讯',
                             link: '/peripheral/matrix/',
+                            items: [
+                                {
+                                    text: '贴图包',
+                                    link: '/peripheral/matrix/stickers/',
+                                }
+                            ],
                         },
                         {
                             text: '电子邮件',
@@ -81,16 +111,30 @@ export default defineConfig({
                         {
                             text: '周边服务',
                             link: '/develop/peripheral/',
+                            items: [
+                                {
+                                    text: 'Misskey 的授权模式',
+                                    link: '/develop/peripheral/auth/',
+                                }
+                            ],
                         }
                     ]
                 },
                 {
-                    text: '附录',
+                    text: '其他',
                     collapsible: true,
                     items: [
                         {
                             text: '附录',
                             link: '/appendix/',
+                        },
+                        {
+                            text: '联系我们',
+                            link: '/contact/',
+                        },
+                        {
+                            text: '赞助',
+                            link: '/sponsor/',
                         }
                     ]
                 }
