@@ -198,6 +198,12 @@ http://localhost:3000/?token=uuuuuuuu-uuuu-iiii-dddd-dddddddddddd
 }
 ```
 
+::: warning 关于 用户的详细信息 Object
+
+此处返回的 Object 与使用 `i` API 端点返回的数据结构可能不一致。出于数据稳定性考量，我们建议您以 `i` 端点的数据结构为准。
+
+:::
+
 可能出现的请求错误提示如下：
 
 ```json
