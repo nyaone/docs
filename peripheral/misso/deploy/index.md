@@ -25,7 +25,7 @@
 
 ::: warning 目前存在的问题
 
-1. 现在 MiSSO 里对 Misskey 用户的定义是直接写了一个严格定义的结构体，但这样会让程序的兼容性下降，在 Misskey 用户结构出现变更后可能会导致工作不正常等问题的发生。这边想要让除了明确需要使用的字段定义外同时在 json marshall 时保留其他内容，以方便其他应用访问时获取完整的用户信息，尝试了让 Go 隐式包含 interface{} 、 map[string]interface{} 都没法用，不确定有没有什么好的办法，还是说只能定义成 map[string]interface{} 的结构，再用类型不安全的方式去处理。
+1. ~~现在 MiSSO 里对 Misskey 用户的定义是直接写了一个严格定义的结构体，但这样会让程序的兼容性下降，在 Misskey 用户结构出现变更后可能会导致工作不正常等问题的发生。~~这个问题会在 v0.2.0 得到解决。
 2. 现在的 MiSSO 对登录状态的管理没有一个较好的方法，解决方案比较妥协折中（记住，但是只记住 10 分钟），不知道有没有什么更好的思路。
 3. 现在的一些时间参数都是硬编码进程序的，以后也许会开放通过配置项修改。
 
@@ -309,7 +309,7 @@ Hydra 在启动时候可以[指定其工作模式](https://www.ory.sh/docs/hydra
 
 使用的 API 地址为 `/admin/clients` ，该接口为使用 `POST` 方式提交 `json` 数据。
 
-例如，我们创建一个用于给 Matrix 使用的客户端（其中的 `scope` 就是我随手写的一个值，这个值具体由应用的实际使用场景来定义）：
+例如，我们创建一个用于给 Matrix 使用的客户端（其中的 `scope` ~~就是我随手写的一个值，这个值具体由应用的实际使用场景来定义~~ **请参见下文 [关于 scope 的设置](#关于-scope-的设置)**）：
 
 ```json
 {
@@ -369,7 +369,62 @@ Hydra 在启动时候可以[指定其工作模式](https://www.ory.sh/docs/hydra
 
 Hydra 支持传入的参数还有很多，具体可以参见上文提到的文档。
 
-::: danger 安全生产小贴士
+### 关于 scope 的设置
+
+当前发布的 v0.1 版本里的 `scope` 并没有实质作用。但是从 v0.2 版本开始， `scope` 将会被定义为 Misskey 返回的用户信息 Key-Value 结构体中的 key 值，用以指引需要使用的字段。
+
+例如， Misskey 的 `i` 端点返回的结构体形式如下：
+
+```json
+{
+    "id": "8837yxdz1d",
+    "name": "糖喵💕🍭(◍•ᴗ•◍)✧*",
+    "username": "Candinya",
+    "host": null,
+    "avatarUrl": "https://file.nya.one/misskey/thumbnail-a4fa0124-cdc3-4b58-b0bd-9debfaeb92d2.webp",
+    "avatarBlurhash": "yVPPT0oz}kxBH@r=KM=:RlaIsnohVZx[nyoIbcNJRPjcxt=]s,ESM}xaa1Io=Vn~M|oyk8bH%LV|R.R:s+WANHRiM~j]rrs+ogn+bc",
+    "isBot": false,
+    "isCat": false,
+    "onlineStatus": "online",
+    // ...还有很多其他字段
+}
+```
+
+其中 MiSSO 会将用户的 `用户名@实例` 组合成用户的邮箱地址 `email` ，如果获取全量数据时，就会得到这样的结果：
+
+```diff
+{
+    "id": "8837yxdz1d",
+    "name": "糖喵💕🍭(◍•ᴗ•◍)✧*",
+    "username": "Candinya",
+    "host": null,
+    "avatarUrl": "https://file.nya.one/misskey/thumbnail-a4fa0124-cdc3-4b58-b0bd-9debfaeb92d2.webp",
+    "avatarBlurhash": "yVPPT0oz}kxBH@r=KM=:RlaIsnohVZx[nyoIbcNJRPjcxt=]s,ESM}xaa1Io=Vn~M|oyk8bH%LV|R.R:s+WANHRiM~j]rrs+ogn+bc",
+    "isBot": false,
+    "isCat": false,
+    "onlineStatus": "online",
+    // ...还有很多其他字段
++    "email": "Candinya@nya.one"
+}
+```
+
+那么当一个应用申请的 `scope` 为 `id name username email` 时， MiSSO 返回的结果将会如下：
+
+```json
+{
+    "id": "8837yxdz1d",
+    "name": "糖喵💕🍭(◍•ᴗ•◍)✧*",
+    "username": "Candinya",
+    "email": "Candinya@nya.one"
+}
+```
+
+这样一方面可以将具体内容格式的处理交给客户端去进行，避免 MiSSO 中硬编码强类型导致出现跨版本兼容性困难；
+另一方面也能实现更细粒度的权限管理，尽可能保证用户隐私信息不被未授权的第三方应用获取，以确保用户的信息与使用安全。
+
+出于安全与适应性因素考虑，我们推荐您在升级 v0.2 开始的版本时，重新创建所有应用的 OAuth2 客户端。
+
+::: tip 安全生产小贴士
 
 完成 OAuth2 客户端的创建工作之后，请记得关闭刚刚打开的管理员端口。
 
