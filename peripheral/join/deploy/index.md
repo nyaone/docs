@@ -2,9 +2,7 @@
 
 ## 项目仓库
 
-您可以参见我们平台上的群组： [邀请管理 - NyaCodes](https://nya.codes/nyaone/join)
-
-或是参见 GitHub 上的镜像：
+您可以参见我们 GitHub 上的仓库：
   - [前端](https://github.com/nyaone/join-frontend)
   - [后端](https://github.com/nyaone/join-backend)
 

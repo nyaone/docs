@@ -2,9 +2,7 @@
 
 ## 项目仓库
 
-您可以参见我们平台上的仓库： [MiSSO - NyaCodes](https://nya.codes/nyaone/misso)
-
-或是参见 GitHub 上的镜像： [MiSSO - GitHub](https://github.com/nyaone/misso)
+您可以参见我们 GitHub 上的仓库： [MiSSO - GitHub](https://github.com/nyaone/misso)
 
 ## 开发工作
 
