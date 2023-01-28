@@ -82,6 +82,23 @@ MiSSO 构建后为二进制格式的可执行文件，您可以自由部署在�
 
 您需要参照 [开发者创建应用](/develop/peripheral/auth/#开发者创建应用) 中描述的步骤，创建一个应用并记录下它的应用私钥，以从 Misskey 获得授权的用户信息。
 
+其中， `callbackUrl` 请设置成 MiSSO 的 `/misskey` 路径。
+
+::: details 样例
+
+喵窝创建的应用请求体如下：
+
+```json
+{
+    "name": "MiSSO",
+    "description": "使用 Misskey 来一键登录",
+    "callbackUrl": "https://sso.nya.one/misskey",
+    "permission": []
+}
+```
+
+:::
+
 ## 参数配置
 
 在仓库的 .config 目录下提供了针对 Hydra 和 MiSSO 的配置样例，可供您参考使用。
