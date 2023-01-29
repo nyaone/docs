@@ -25,9 +25,7 @@
 
 ::: warning 目前存在的问题
 
-1. ~~现在 MiSSO 里对 Misskey 用户的定义是直接写了一个严格定义的结构体，但这样会让程序的兼容性下降，在 Misskey 用户结构出现变更后可能会导致工作不正常等问题的发生。~~这个问题会在 v0.2.0 得到解决。
-2. 现在的 MiSSO 对登录状态的管理没有一个较好的方法，解决方案比较妥协折中（记住，但是只记住 10 分钟），不知道有没有什么更好的思路。
-3. 现在的一些时间参数都是硬编码进程序的，以后也许会开放通过配置项修改。
+现在的 MiSSO 对登录状态的管理没有一个较好的方法，解决方案比较妥协折中（记住，但是只记住 10 分钟），不知道有没有什么更好的思路。
 
 :::
 
@@ -155,9 +153,15 @@ misskey:
     secret: Misskey 应用的私钥
 hydra:
   admin_url: 指向 Hydra 的 Admin 端口的链接
+time: （这里的单位全都是秒）
+  request_valid: 登录和同意请求的有效时间，超时则认为是无效的请求（需要大于 0 ）
+  login_remember: 记住用户登录状态的时间（ 0 表示不记住，每次授权都跳转 Misskey 请求验证）
+  consent_remember: 记住用户同意应用使用信息时记住的时间（ 0 表示永远记住，再也不询问，除非应用请求了更多权限）
+  userinfo_cache: 用户信息的缓存时间（需要大于 0 ）
 ```
 
-其中 `misskey.instance` 与[邀请管理系统](/peripheral/join/)的参数并不相同！这个参数**不能**包含 schema 头，因为它会被用作生成用户邮箱的域名部分。另外，这个邮箱可以使用 [email2misskey](/peripheral/email/) 来让其真的有效。
+1. `misskey.instance` 与[邀请管理系统](/peripheral/join/)的参数并不相同！这个参数**不能**包含 schema 头，因为它会被用作生成用户邮箱的域名部分。这个邮箱可以使用 [email2misskey](/peripheral/email/) 之类的工具来让其真的有效。
+2. 请注意 `login_remember` 和 `consent_remember` 设置成 0 的效果并**不一致**！不要弄反了。
 
 ::: details 样例
 
@@ -173,6 +177,11 @@ misskey:
     secret: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 hydra:
   admin_url: "http://hydra:4445"
+time:
+  request_valid: 3600
+  login_remember: 600
+  consent_remember: 0
+  userinfo_cache: 3600
 ```
 
 :::
@@ -309,12 +318,12 @@ Hydra 在启动时候可以[指定其工作模式](https://www.ory.sh/docs/hydra
 
 使用的 API 地址为 `/admin/clients` ，该接口为使用 `POST` 方式提交 `json` 数据。
 
-例如，我们创建一个用于给 Matrix 使用的客户端（其中的 `scope` ~~就是我随手写的一个值，这个值具体由应用的实际使用场景来定义~~ **请参见下文 [关于 scope 的设置](#关于-scope-的设置)**）：
+例如，我们创建一个用于给 Matrix 使用的客户端（其中的 `scope` 请参见下文 [关于 scope 的设置](#关于-scope-的设置)）：
 
 ```json
 {
     "client_name": "Matrix",
-    "scope": "read:accounts",
+    "scope": "id name username",
     "redirect_uris": [
         "https://matrix.nya.one/_synapse/client/oidc/callback"
     ]
@@ -333,7 +342,7 @@ Hydra 在启动时候可以[指定其工作模式](https://www.ory.sh/docs/hydra
     ],
     "grant_types": null,
     "response_types": null,
-    "scope": "read:accounts",
+    "scope": "id name username",
     "audience": [],
     "owner": "",
     "policy_uri": "",
@@ -371,7 +380,7 @@ Hydra 支持传入的参数还有很多，具体可以参见上文提到的文�
 
 ### 关于 scope 的设置
 
-当前发布的 v0.1 版本里的 `scope` 并没有实质作用。但是从 v0.2 版本开始， `scope` 将会被定义为 Misskey 返回的用户信息 Key-Value 结构体中的 key 值，用以指引需要使用的字段。
+从现在已经发布的 v0.2 版本开始， `scope` 将会被定义为 Misskey 返回的用户信息 Key-Value 结构体中的 key 值，用以指引需要使用的字段。
 
 例如， Misskey 的 `i` 端点返回的结构体形式如下：
 
@@ -424,6 +433,35 @@ Hydra 支持传入的参数还有很多，具体可以参见上文提到的文�
 
 出于安全与适应性因素考虑，我们推荐您在升级 v0.2 开始的版本时，重新创建所有应用的 OAuth2 客户端。
 
+::: details 喵窝使用的两个 OAuth2 客户端配置参数
+
+Grafana:
+
+```json
+{
+  "client_name": "Grafana",
+  "scope": "name username email",
+  "redirect_uris": [
+    "https://stats.nya.one/login/generic_oauth"
+  ],
+  "logo_uri": "https://stats.nya.one/public/img/grafana_icon.svg"
+}
+```
+
+Matrix:
+
+```json
+{
+    "client_name": "Matrix",
+    "scope": "id name username",
+    "redirect_uris": [
+        "https://matrix.nya.one/_synapse/client/oidc/callback"
+    ]
+}
+```
+
+:::
+
 ::: tip 安全生产小贴士
 
 完成 OAuth2 客户端的创建工作之后，请记得关闭刚刚打开的管理员端口。
@@ -454,7 +492,7 @@ enabled = true
 client_id = uuuuuuuu-uuuu-iiii-dddd-dddddddddddd
 client_secret = xxxxxxxxxxxxxxxxxxxxxxxxxx
 empty_scopes = false
-scopes = read:accounts
+scopes = name username email
 auth_url = https://sso.nya.one/oauth2/auth
 token_url = https://sso.nya.one/oauth2/token
 api_url = https://sso.nya.one/userinfo
@@ -476,7 +514,7 @@ oidc_providers:
     authorization_endpoint: "https://sso.nya.one/oauth2/auth"
     token_endpoint: "https://sso.nya.one/oauth2/token"
     userinfo_endpoint: "https://sso.nya.one/userinfo"
-    scopes: ["read:accounts"]
+    scopes: ["id", "name", "username"]
     user_mapping_provider:
       config:
         subject_claim: "id"
