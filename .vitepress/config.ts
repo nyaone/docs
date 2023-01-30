@@ -43,12 +43,12 @@ export default defineConfig({
                             link: '/tos/',
                         },
                         {
-                            text: '加入我们',
-                            link: '/join/',
-                        },
-                        {
                             text: '合理使用规约',
                             link: '/aup/',
+                        },
+                        {
+                            text: '加入我们',
+                            link: '/join/',
                         }
                     ],
                 },

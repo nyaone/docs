@@ -160,7 +160,7 @@ time: （这里的单位全都是秒）
   userinfo_cache: 用户信息的缓存时间（需要大于 0 ）
 ```
 
-1. `misskey.instance` 与[邀请管理系统](/peripheral/join/)的参数并不相同！这个参数**不能**包含 schema 头，因为它会被用作生成用户邮箱的域名部分。这个邮箱可以使用 [email2misskey](/peripheral/email/) 之类的工具来让其真的有效。
+1. `misskey.instance` 这个参数**不能**包含 schema 头，因为它会被用作生成用户邮箱的域名部分。这个邮箱可以使用 [email2misskey](/peripheral/email/) 之类的工具来让其真的有效。
 2. 请注意 `login_remember` 和 `consent_remember` 设置成 0 的效果并**不一致**！不要弄反了。
 
 ::: details 样例
