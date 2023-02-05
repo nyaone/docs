@@ -121,7 +121,7 @@ export default defineConfig({
                     ]
                 },
                 {
-                    text: '其他',
+                    text: '其它',
                     collapsible: true,
                     items: [
                         {
