@@ -97,6 +97,16 @@ export default defineConfig({
                         {
                             text: '电子邮件',
                             link: '/peripheral/email/',
+                            items: [
+                                {
+                                    text: '使用',
+                                    link: '/peripheral/email/use/',
+                                },
+                                {
+                                    text: '部署',
+                                    link: '/peripheral/email/deploy/',
+                                }
+                            ],
                         }
                     ],
                 },
