@@ -1,5 +1,9 @@
+/* Colors */
+
 :root {
-  --vp-c-green: #62b6e7;
+  --vp-c-brand: #62b6e7;
+
+  --vp-c-green: #1081b9;
   --vp-c-green-light: #3499d3;
   --vp-c-green-lighter: #6eb7e7;
   --vp-c-green-dark: #056996;
@@ -9,4 +13,36 @@
   --vp-c-green-dimm-3: rgba(16, 129, 185, 0.5);
 
   --vp-custom-block-tip-text: var(--vp-c-green-darker);
+  --vp-custom-block-warning-text: var(--vp-c-yellow-darker);
+  --vp-custom-block-danger-text: var(--vp-c-red-darker);
+
+}
+
+.dark {
+  --vp-custom-block-tip-text: var(--vp-c-green-lighter);
+  --vp-custom-block-warning-text: var(--vp-c-yellow-lighter);
+  --vp-custom-block-danger-text: var(--vp-c-red-lighter);
+}
+
+/* Images */
+
+.vp-doc img {
+  border-radius: 8px;
+  margin: auto;
+}
+
+.dark .vp-doc img {
+  background-color: #fff;
+}
+
+/* Custom Block */
+
+.vp-doc .custom-block {
+  font-size: 16px;
+}
+.vp-doc .custom-block p {
+  line-height: 26px;
+}
+.vp-doc .custom-block .custom-block-title {
+  font-size: 18px;
 }
