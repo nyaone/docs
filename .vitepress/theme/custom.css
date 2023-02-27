@@ -1,10 +1,12 @@
 :root {
   --vp-c-green: #62b6e7;
-  --vp-c-green-light: #7ebee2;
-  --vp-c-green-lighter: #b7dff7;
-  --vp-c-green-dark: #1e6892;
-  --vp-c-green-darker: #052c42;
-  --vp-c-green-dimm-1: rgba(98, 182, 231, 0.5);
-  --vp-c-green-dimm-2: rgba(98, 182, 231, 0.25);
-  --vp-c-green-dimm-3: rgba(98, 182, 231, 0.05);
+  --vp-c-green-light: #3499d3;
+  --vp-c-green-lighter: #6eb7e7;
+  --vp-c-green-dark: #056996;
+  --vp-c-green-darker: #045778;
+  --vp-c-green-dimm-1: rgba(16, 129, 185, 0.05);
+  --vp-c-green-dimm-2: rgba(16, 129, 185, 0.2);
+  --vp-c-green-dimm-3: rgba(16, 129, 185, 0.5);
+
+  --vp-custom-block-tip-text: var(--vp-c-green-darker);
 }

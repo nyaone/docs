@@ -13,7 +13,7 @@
   "license": "CC-BY-SA-4.0",
   "private": false,
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.36",
-    "vue": "^3.2.45"
+    "vitepress": "^1.0.0-alpha.48",
+    "vue": "^3.2.47"
   }
 }

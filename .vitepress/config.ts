@@ -171,7 +171,7 @@ export default defineConfig({
       
         footer: {
             message: 'CC-BY-SA-4.0 Licensed',
-            copyright: 'Copyright © 2020-2023 NyaOne'
+            copyright: `Copyright © 2020-${new Date().getFullYear()} NyaOne`
         },
     }
 })
