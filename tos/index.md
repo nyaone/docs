@@ -45,10 +45,6 @@
 
 本站使用的自定义表情包为根据用户提交组织而成，如果其中包含了侵犯您版权的内容，请您带着版权相关的证明文件 [联系我们] 执行清理操作，很抱歉给您带来的不便。
 
-## 注册相关说明
-
-请参阅 [加入我们] 所述的信息。
-
 ## 行为规范
 
 请参阅 [合理使用规约] 所述的信息。
@@ -65,7 +61,6 @@
 [Nyawork]: https://nya.work
 [喵窝]: https://nya.one
 [ActivityPub]: https://activitypub.rocks
-[加入我们]: /join/
 [合理使用规约]: /aup/
 [基于 Misskey 平台的周边生态开发]: /develop/peripheral/
 [Nyawork 的隐私政策]: https://nya.work/privacy
