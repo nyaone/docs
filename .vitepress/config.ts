@@ -5,7 +5,7 @@ export default defineConfig({
     title: '喵窝资料室',
     description: '喵窝相关的文档',
     lastUpdated: true,
-    cleanUrls: true,
+    cleanUrls: 'without-subfolders',
     head: [['meta', { name: 'theme-color', content: '#62b6e7' }]],
     themeConfig: {
 
@@ -36,6 +36,7 @@ export default defineConfig({
             '/': [
                 {
                     text: '基础规范',
+                    collapsible: false,
                     items: [
                         {
                             text: '服务条款',
