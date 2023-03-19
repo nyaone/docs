@@ -35,15 +35,18 @@
           "type": "m.stickerpicker",
           "url": "https://m-stickers.nya.one/?theme=$theme",
           "name": "NyaStickers",
+          "creatorUserId": "@<YOUR_NAME>:nya.one",
           "data": {}
         },
-        "sender": "@im:nya.one",
+        "sender": "@<YOUR_NAME>:nya.one",
         "state_key": "nyastickers",
         "type": "m.widget",
         "id": "stickers-nyaone"
       }
     }
     ```
+
+    其中 `<YOUR_NAME>` 指的是您的唯一标识用户名。例如当用户名是 `candinya` 时，您的 `creatorUserId` 和 `sender` 应该为 `@candinya:nya.one` 。
 
     ![粘贴代码](./assets/paste-stickers-config.png)
 
