@@ -71,6 +71,8 @@
 1. 在其他 Matrix 服务器上也可以使用喵窝的贴图，同样您也可以在喵窝的服务器上使用其他服务器（例如您自己搭建的服务器）的贴图。
 2. 这些贴纸均为从 Telegram 搬运所得，具体版权归贴图版权持有方所有，喵窝此处的仅是搬运使用权，并不对任何与版权相关的内容负责。如对贴图的版权有疑虑，请 [联系我们](/contact/) 。
 
-## 贴纸速览
+::: details 贴纸速览
 
-<iframe src="https://m-stickers.nya.one" style="width: 300px; height: 300px;"></iframe>
+<iframe src="https://m-stickers.nya.one" style="border: 1px solid #62b6e7; background: white; padding: 8px; border-radius: 8px; width: 300px; height: 315px; resize: auto; max-width: 100%"></iframe>
+
+:::
