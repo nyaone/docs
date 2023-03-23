@@ -36,7 +36,7 @@
 
 ## 文档与 SDK
 
-~~Misskey 有内置的文档系统，可以在 [/api-doc](https://nya.one/api-doc) 访问得到，不过请注意不同版本的请求接口可能会有些许变更，当之前的代码不再可用时您可以先尝试排查是否是由站点的版本升级导致。~~ v13 开始内置的文档系统没了，请参阅 MisskeyHub 的 [エンドポイント一覧](https://misskey-hub.net/docs/api/endpoints.html) 部分的描述。
+Misskey 有内置的文档系统，可以在 [/api-doc](https://nya.one/api-doc) 访问得到，不过请注意不同版本的请求接口可能会有些许变更，当之前的代码不再可用时您可以先尝试排查是否是由站点的版本升级导致。
 
 Misskey 官方提供了 JavaScript / TypeScript 使用的 SDK [misskey.js](https://github.com/misskey-dev/misskey.js) ，您可以直接使用。
 
