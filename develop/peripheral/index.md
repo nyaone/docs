@@ -40,4 +40,4 @@ Misskey 有内置的文档系统，可以在 [/api-doc](https://nya.one/api-doc)
 
 Misskey 官方提供了 JavaScript / TypeScript 使用的 SDK [misskey.js](https://github.com/misskey-dev/misskey.js) ，您可以直接使用。
 
-另外，本站有时也会有一些我们开发的工具代码（如用于周边服务账号管理的 bot 程式），您可以在 [GitHub/nyaone](https://github.com/nyaone) 得到参考。
+另外，本站有时也会有一些我们开发的工具代码，您可以在 [GitHub/nyaone](https://github.com/nyaone) 得到参考。
