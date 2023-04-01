@@ -10,11 +10,11 @@ hero:
   tagline: "在这里我们会提供许多可以公开的文档，希望能为您提供帮助，预祝您使用愉快。 🎉"
   actions:
     - theme: brand
-      text: 服务条款
-      link: /tos/
-    - theme: alt
       text: 加入我们
       link: /join/
+    - theme: alt
+      text: 开始开发
+      link: /develop/
 
 features:
   - title: "去中心化社交"

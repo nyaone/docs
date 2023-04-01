@@ -36,8 +36,11 @@ export default defineConfig({
             '/': [
                 {
                     text: '基础规范',
-                    collapsible: false,
                     items: [
+                        {
+                            text: '加入我们',
+                            link: '/join/',
+                        },
                         {
                             text: '服务条款',
                             link: '/tos/',
@@ -45,10 +48,6 @@ export default defineConfig({
                         {
                             text: '合理使用规约',
                             link: '/aup/',
-                        },
-                        {
-                            text: '加入我们',
-                            link: '/join/',
                         }
                     ],
                 },
