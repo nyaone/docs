@@ -176,5 +176,9 @@ export default defineConfig({
             message: 'CC-BY-SA-4.0 Licensed',
             copyright: `Copyright © 2020-${new Date().getFullYear()} NyaOne`
         },
+
+        search: {
+            provider: 'local',
+        }
     }
 })
