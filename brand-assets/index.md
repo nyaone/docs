@@ -36,11 +36,11 @@
 
 特别的，当您需要将 LOGO 作为彩色格式呈现时，为确保品牌显示一致性，请确认其主题色（即蓝色部分）为 `#62b6e7` （ rgb(98, 182, 231) ） 。
 
-| 格式      | 圆底                                                                                         | 方底                                                                                            |
-|---------|--------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| SVG     | <a href="./logo/round.svg" download><img src="./logo/round.svg" width="64" /></a>          | <a href="./logo/square.svg" download><img src="./logo/square.svg" width="64" /></a>           |
-| SVG（裁切） | <a href="./logo/round-clip.svg" download><img src="./logo/round-clip.svg" width="64" ></a> | <a href="./logo/square-clip.svg" download><img src="./logo/square-clip.svg" width="64" /></a> |
-| PNG     | <a href="./logo/round.png" download><img src="./logo/round.png" width="64" /></a>          | <a href="./logo/square.png" download><img src="./logo/square.png" width="64" /></a>           |
+| 格式      | 圆底                                                                                                     | 方底                                                                                                        |
+|---------|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| SVG     | <a href="/assets/logo/round.svg" download><img src="/assets/logo/round.svg" width="64" /></a>          | <a href="/assets/logo/square.svg" download><img src="/assets/logo/square.svg" width="64" /></a>           |
+| SVG（裁切） | <a href="/assets/logo/round-clip.svg" download><img src="/assets/logo/round-clip.svg" width="64" ></a> | <a href="/assets/logo/square-clip.svg" download><img src="/assets/logo/square-clip.svg" width="64" /></a> |
+| PNG     | <a href="/assets/logo/round.png" download><img src="/assets/logo/round.png" width="64" /></a>          | <a href="/assets/logo/square.png" download><img src="/assets/logo/square.png" width="64" /></a>           |
 
 ::: warning LOGO 的补充说明
 

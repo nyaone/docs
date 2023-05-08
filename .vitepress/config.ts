@@ -9,7 +9,7 @@ export default defineConfig({
     head: [['meta', { name: 'theme-color', content: '#62b6e7' }]],
     themeConfig: {
 
-        logo: '/assets/logo.svg',
+        logo: '/assets/logo/round.svg',
 
         nav: [
             {
