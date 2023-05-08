@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress';
+import { SearchPlugin } from "vitepress-plugin-search";
 
 export default defineConfig({
     lang: 'zh',
@@ -175,8 +176,18 @@ export default defineConfig({
             copyright: `Copyright © 2020-${new Date().getFullYear()} NyaOne`
         },
 
-        search: {
-            provider: 'local',
-        }
+        // search: {
+        //     provider: 'local',
+        // }
+    },
+
+    vite: {
+        plugins: [
+            SearchPlugin({
+                tokenize: "full",
+                buttonLabel: "搜索",
+                placeholder: "让我康康...",
+            })
+        ]
     }
 })
