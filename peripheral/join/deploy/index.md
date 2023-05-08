@@ -48,13 +48,21 @@
 
 该部分使用的是 [API Token 手动授权](/develop/peripheral/auth/#api-token-手动授权) 模式进行管理员和迎新消息发送的授权。
 
+<div class="fillbg">
+
 [![新用户注册流程](./assets/user-register-flow.svg)](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNqFVMtO20AU_ZVo1k4UJ7HjeJFVt6zYVd5Y8dBGJTYkttQ0iuTQB4YSMIIWBIiHSgJSJbsVVYMaWn9MPWPnLzp4QuQ869V47jn3nHNHMw1Q0hQIRFCD6wZUS_BZWX5RlSuSmiBfcHiLrV6yWERb7eCrKybQfde_3x5smKHbCy5boeMNjhxapAy6fmTYuxEDfzHxRWfEGKKiYjLWOPQO0en5CIaPXWR38dkW_mTNsRL-OUDvO3Qb2e2F8iNUePMu3Hk7ZqJYXCrXaq9gfQo8bWKITMYEqPEFnHlZF1CmsgZXTuhc47tb9GEn_NFFe705cdHe_sBsUcgQ7vbw940pK7NP56_Z-n-S2MDicsg6Rf1fcbkZ0_IfLicI2LLR9oXvXeGWO-lyUsfbxZ-_4Z_WDOj4bGn0oH-Az8_GJkWQNCCJHmGo_MQ0R7qDzTZyTpC9T0nh5t1TqITf76AHE9189H97pCqpgAEVWK3IZYXcpsZjRwnoL2EFSkAkSwWuyMaqLgFJbRKobOjacl0tAVGvGpABxpoi60-XD4gr8mqN7K7J6nNNG_sHYgO8BmKSY1NpLifw-byQZXmWzTKgDkRWyKUyPE8qOZ5jC9lMrsmAN1GLdKqQFtIcm88I-QwnZAsCA6BS1rXqEn0Booeg-Q_qGhQY)
+
+</div>
 
 ### 管理员（已有的用户）登录
 
 该部分使用的是 [应用 Auth](/develop/peripheral/auth/#应用-auth) 模式进行用户登录的授权。
 
+<div class="fillbg">
+
 [![管理员登录流程](./assets/admin-login-flow.svg)](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNqNkj9PwkAYxr9K886F9A8t5QYmVyY306WhhxJpi6VNREIiMgAqiBFM_IcyaWICGAcGNHwZeoVvYelBAgOJN93d87vnfe7uLUHa0jEgKOATF5tpvJfVDm3NUE0mGH7ng9THkWTSazT9zyFi5sMx-brwHybeb5ciVFki7VaIkKuGd3NPEYrPpn1SGa7wkIpsWk473lNvJ7-2T2ULhWNcRMyi1vQGj177loab176ZlcaQxvu8f01adfJSpcdXykY5qgYV56PqjhvMft4W5xWaiHRHpDn4T3Z_ckd6z1s8NQ54GhUxK89627t8VU1gwcC2oWX14P1LyzMqOEfYwCqgYKrjjObmHBVUsxygmutY-0UzDcixXcyCm9c1Z_1dgDJarhDs5jXzwLK21oBKcAooIvFRToopcjyuiLzM8yILRUC8EosKshwoMVniE6IQK7NwFlpw0QSncBIfF5S4ICliQmEB61nHslO0Z8LWKf8BCpELIw)
+
+</div>
 
 ## 准备工作
 

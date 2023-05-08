@@ -22,12 +22,12 @@
 
 /* Images */
 
-.vp-doc img {
+.vp-doc .fillbg img {
   border-radius: 8px;
   margin: auto;
 }
 
-.dark .vp-doc img {
+.dark .vp-doc .fillbg img {
   background-color: #fff;
 }
 
