@@ -12,10 +12,6 @@
   --vp-c-green-dimm-2: rgba(16, 129, 185, 0.2);
   --vp-c-green-dimm-3: rgba(16, 129, 185, 0.5);
 
-  --vp-custom-block-tip-text: var(--vp-c-green-darker);
-  --vp-custom-block-warning-text: var(--vp-c-yellow-darker);
-  --vp-custom-block-danger-text: var(--vp-c-red-darker);
-
 }
 
 .dark {
