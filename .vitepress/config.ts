@@ -138,6 +138,10 @@ export default defineConfig({
                             link: '/appendix/',
                         },
                         {
+                            text: '品牌资源',
+                            link: '/brand-assets/',
+                        },
+                        {
                             text: '联系我们',
                             link: '/contact/',
                         },
