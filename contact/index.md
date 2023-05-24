@@ -22,7 +22,16 @@
 
 ## 联系方式
 
-### Nya Candy
+请不要私聊任何用户，以避免带来困扰。除此处描述的联系方式外其他任何途径都是非官方的，请不要相信。
 
-- Fediverse: `@Candinya@nya.one`
-- Matrix: `@candinya:nya.one`
+### 一般帮助
+
+- Matrix: [喵窝](https://matrix.to/#/#public:nya.one)
+
+### 技术支持
+
+- Matrix: [猫猫互助](https://matrix.to/#/!hnaPFcTRaumJqIordK:nya.one?via=nya.one&via=matrix.org&via=mozilla.org)
+
+### 站务相关
+
+- Fediverse: `@support@nya.one`
