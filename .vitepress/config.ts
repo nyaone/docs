@@ -136,6 +136,10 @@ export default defineConfig({
                             link: '/appendix/',
                         },
                         {
+                            text: '服务架构',
+                            link: '/service-structure/'
+                        },
+                        {
                             text: '品牌资源',
                             link: '/brand-assets/',
                         },
