@@ -12,8 +12,9 @@
   "author": "Nya Candy <dev@candinya.com>",
   "license": "CC-BY-SA-4.0",
   "private": false,
+  "type": "module",
   "devDependencies": {
-    "vitepress": "1.0.0-beta.7",
-    "vue": "^3.3.4"
+    "vitepress": "1.0.0-rc.22",
+    "vue": "^3.3.5"
   }
 }

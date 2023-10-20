@@ -2,22 +2,11 @@
 
 :root {
   --vp-c-brand: #62b6e7;
+  --vp-c-brand-1: #0ea5e9;
+  --vp-c-brand-2: #38bdf8;
+  --vp-c-brand-3: #62b6e7;
+  --vp-c-brand-soft: #62b6e746;
 
-  --vp-c-green: #1081b9;
-  --vp-c-green-light: #3499d3;
-  --vp-c-green-lighter: #6eb7e7;
-  --vp-c-green-dark: #056996;
-  --vp-c-green-darker: #045778;
-  --vp-c-green-dimm-1: rgba(16, 129, 185, 0.05);
-  --vp-c-green-dimm-2: rgba(16, 129, 185, 0.2);
-  --vp-c-green-dimm-3: rgba(16, 129, 185, 0.5);
-
-}
-
-.dark {
-  --vp-custom-block-tip-text: var(--vp-c-green-lighter);
-  --vp-custom-block-warning-text: var(--vp-c-yellow-lighter);
-  --vp-custom-block-danger-text: var(--vp-c-red-lighter);
 }
 
 /* Images */
@@ -27,9 +16,9 @@
   margin: auto;
 }
 
-.dark .vp-doc .fillbg img {
+/* .dark .vp-doc .fillbg img {
   background-color: #fff;
-}
+} */
 
 /* Custom Block */
 
