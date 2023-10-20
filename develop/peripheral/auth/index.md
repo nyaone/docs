@@ -264,11 +264,66 @@ Misskey 的授权会话不带有过期机制，所以一个会话在得到授权
 
 ::: warning 安全提示
 
-出于安全考虑，我们建议您依据以下两个原则管理 API Token：
+出于安全考虑，我们建议您依据以下三个原则管理 API Token：
 
 1. 一个应用一个 Token ，应用销毁删除 Token
 2. 最小化 Token 的权限，即仅保留需要的部分，禁止所有无关的权限
+3. 定期检查您账号里的 Token ，及时删除掉所有陌生或不再使用的
 
 :::
 
 请保管好您的 API Token ，若有不慎遗失或是泄露，请立刻删除并重新生成。
+
+## OAuth2
+
+Misskey 自从 2023.9.0 版本引入了 OAuth2 认证系统以实现更强的兼容性。您可以在服务器的 [.well-known/oauth-authorization-server](https://nya.one/.well-known/oauth-authorization-server) 获取到关于这个 OAuth2 认证实现的全部信息，例如 授权端点、令牌获取端点、支持的权限项 等等。
+
+但其本身具有许多局限：只能在调用时从目标客户端的前端页面拉取目标客户端的相关信息，而无法使用预先注册的应用。这条约束致使其使用场景受到了比较严重的限制。
+
+喵窝修改的 OAuth2 实现了基于预先注册应用的兼容，并针对其进行相关请求参数进行针对性修改，从而完成了对诸如 Matrix 连接场景的兼容。以下流程描述均默认基于喵窝修改版的 OAuth2 实现。
+
+::: details 如果您也想要修改版的 OAuth2 处理代码
+
+您可以从 [nyaone/misskey](https://github.com/nyaone/misskey/blob/nyadev/packages/backend/src/server/oauth/OAuth2ProviderService.ts) 获得我们修改的代码，以进一步研究并适配给您的 Misskey 实例。
+
+如果您有任何新想法，也欢迎您随时提出，促进开源生态进步。
+
+:::
+
+Misskey 的 OAuth2 使用强制的 PKCE 算法进行安全保证，加密算法为 S256 (SHA-256) 。在针对非注册应用的条件下需要保证客户端提供能被 Misskey 实例访问到的信息页面，已注册应用（即通过上文 [应用 Auth](#应用-Auth) 中描述的内容进行注册）依据下表进行参数对应：
+
+| 应用 Auth   | OAuth2        | 备注       |
+| ----------- | ------------- | ---------- |
+| id          | client_id     |            |
+| permission  | scope         |            |
+| callbackUrl | redirect_uri  |            |
+| secret      | client_secret | 暂时没有用 |
+
+另外，这些参数必须为以下值：
+
+| 参数                  | 值    |
+| --------------------- | ----- |
+| response_type         | code  |
+| response_mode         | query |
+| code_challenge_method | S256  |
+
+为提高安全性，在使用返回的 Code 拉取到 API Token 后 5 分钟内如果再次尝试使用相同的 Code 拉取，会被认为是重放攻击而导致先前注册的 Token 失效。请避免上述情况的发生。
+
+以使用 [OAuth 2.0 debugger](https://oauthdebugger.com/) 发出请求为例，一个可行的参数请求如下所示：
+
+```txt
+https://dev.nya.one/oauth/authorize
+  ?client_id=9cscre9b4s
+  &redirect_uri=https://oauthdebugger.com/debug
+  &scope=read:account
+  &response_type=code
+  &response_mode=query
+  &code_challenge_method=S256
+  &code_challenge=ykFbXtcF7JlUplamfvRdLpLwikhhjLjdXhIbWVCWDJA
+  &state=hnnwt8pu9g6
+  &nonce=pizteimmht
+```
+
+需要注意的是，使用上述调试器时，您无法在前端获取最终的 Token ，因为 Token 获取端点并不是前端友好的，它的执行通常在后端进行，因此出于安全考虑并没有设置 CORS 请求头。
+
+同时，当您使用预先注册的客户端进行注册调用时，我们限制了客户端能获取的 Token 数量，即当新的 Token 生成时就撤销旧的 Token ，以避免多 Token 导致给用户带来迷惑或是困扰。
