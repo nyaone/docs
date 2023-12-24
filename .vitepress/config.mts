@@ -156,11 +156,6 @@ export default defineConfig({
             ],
         },
 
-        editLink: {
-            pattern: 'https://github.com/nyaone/docs/edit/main/:path',
-            text: '在 GitHub 上编辑此页'
-        },
-
         socialLinks: [
             {
                 icon: {
