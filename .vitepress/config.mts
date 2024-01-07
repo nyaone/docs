@@ -170,8 +170,8 @@ export default defineConfig({
         ],
 
         footer: {
-            message: 'CC-BY-SA-4.0 Licensed',
-            copyright: `Copyright © 2020-${new Date().getFullYear()} NyaOne`
+            message: '基于 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank">CC-BY-SA-4.0</a> 授权',
+            copyright: `© 2020-${new Date().getFullYear()} 喵窝 (NyaOne) 版权所有`
         },
 
         search: {
