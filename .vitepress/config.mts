@@ -38,7 +38,7 @@ export default defineConfig({
                     text: '基础规范',
                     items: [
                         {
-                            text: '加入我们',
+                            text: '加入喵窝',
                             link: '/join/',
                         },
                         {
