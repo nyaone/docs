@@ -44,7 +44,7 @@
 
 对喵窝来说，我们将这个工具部署在 `https://api.nya.one` ，并省略了直接调用 Misskey 官方接口时所需提供的 `/api/` 路径。也就是您可以通过形如 `https://api.nya.one/i?i=xxxx` 的方式来调用它。
 
-例如，我们在对喵窝的 OAuth2 改造过程中使用到了这个工具。因为当 OAuth2 客户端拿到 Token 后，会使用 `Authorization: Bearer <token>` 的方式 GET 请求用户信息端点以拉取信息，但 Misskey 自身是不支持这样的调用方式的，所以我们使用这个工具进行了一次中转。
+例如，我们在对喵窝的 [OAuth2](./auth/#oauth2) 改造过程中使用到了这个工具。因为当 OAuth2 客户端拿到 Token 后，会使用 `Authorization: Bearer <token>` 的方式 GET 请求用户信息端点以拉取信息，但 Misskey 自身是不支持这样的调用方式的，所以我们使用这个工具进行了一次中转。
 
 ## API 文档
 
@@ -58,6 +58,6 @@ Misskey 官方提供了一套[独立的 API 文档系统](https://misskey-hub.ne
 
 Misskey 官方提供了 JavaScript / TypeScript 使用的 SDK [misskey.js](https://github.com/misskey-dev/misskey.js) ，您可以直接使用。
 
-也有一些第三方的 SDK 提供，您可以参照Misskey Hub 上的 [ライブラリの一覧](https://misskey-hub.net/docs/api/libraries.html)。
+也有一些第三方的 SDK 提供，您可以参照 Misskey Hub 上的 [ライブラリの一覧](https://misskey-hub.net/docs/api/libraries.html)。
 
 另外，本站有时也会有一些我们开发的工具代码，您可以在 [nyaone](https://github.com/nyaone) 得到参考。

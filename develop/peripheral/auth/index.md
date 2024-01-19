@@ -327,3 +327,5 @@ https://dev.nya.one/oauth/authorize
 需要注意的是，使用上述调试器时，您无法在前端获取最终的 Token ，因为 Token 获取端点并不是前端友好的，它的执行通常在后端进行，因此出于安全考虑并没有设置 CORS 请求头。
 
 同时，当您使用预先注册的客户端进行注册调用时，我们限制了客户端能获取的 Token 数量，即当新的 Token 生成时就撤销旧的 Token ，以避免多 Token 导致给用户带来迷惑或是困扰。
+
+当您拿到请求返回的 Token 后，由于 OAuth2 中定义的是使用 `Authorization: Bearer <token>` 进行授权，而 Misskey 的 API 不支持这种授权方式，您可以参照我们关于 Misskey API 的 [进阶的使用方式](../#进阶的使用方式) 中描述的内容执行相关的调用操作。
