@@ -29,6 +29,10 @@ export default defineConfig({
           },
         ],
       },
+      {
+        text: "订阅更新",
+        link: "https://nya.one/@docs"
+      },
     ],
 
     sidebar: {

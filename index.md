@@ -15,9 +15,6 @@ hero:
     - theme: alt
       text: 🛠️ 开始开发
       link: /develop/
-    - theme: alt
-      text: 📢 订阅更新
-      link: https://nya.one/@docs
 
 features:
   - icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48"><g><rect x="4.491" y="13.053" width="15.475" height="2.001" transform="translate(-6.173 16.953) rotate(-57.923)" fill="#b7e3fc"></rect><rect x="28.613" y="0.543" width="1.999" height="19.549" transform="translate(7.664 32.715) rotate(-64.788)" fill="#b7e3fc"></rect><rect x="18.559" y="25.975" width="23.835" height="1.999" transform="translate(-10.189 28.636) rotate(-43.852)" fill="#b7e3fc"></rect><rect x="29.778" y="28.993" width="20.299" height="2" transform="translate(4.478 65.165) rotate(-81.688)" fill="#b7e3fc"></rect><rect x="9.561" y="18.999" width="28.878" height="2.001" transform="translate(-3.764 5.677) rotate(-12.517)" fill="#b7e3fc"></rect><path d="M19,43a5,5,0,1,1,5-5A5.006,5.006,0,0,1,19,43Z" fill="#47b0ea"></path><path d="M6,29a5,5,0,1,1,5-5A5.006,5.006,0,0,1,6,29Z" fill="#47b0ea"></path><path d="M42,21a5,5,0,1,1,5-5A5.006,5.006,0,0,1,42,21Z" fill="#47b0ea"></path><path d="M18,9a4,4,0,1,1,4-4A4,4,0,0,1,18,9Z" fill="#47b0ea"></path><path d="M38,47a4,4,0,1,1,4-4A4,4,0,0,1,38,47Z" fill="#47b0ea"></path></g></svg>
