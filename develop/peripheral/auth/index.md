@@ -29,6 +29,12 @@ Misskey 有三种授权模式，分别是基于应用的 Auth 、临时授权的
 
 其中 `callbackUrl` 可以不提供， `permission` 可以为空数组（表示不请求任何权限）。
 
+::: info
+
+具体可用的权限列表可以参考 [服务器的 OAuth2 信息](https://nya.one/.well-known/oauth-authorization-server) 里的 `scopes_supported` 部分。
+
+:::
+
 返回结果的格式也是 JSON ，格式如下：
 
 ```json
