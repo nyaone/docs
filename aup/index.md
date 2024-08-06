@@ -315,19 +315,19 @@ Fediverse 系列的开放性为每一个实例都提供了无限的可能，之�
 
 您可以通过对目标 Note 点击右下方 更多 按钮找到**举报**功能。
 
-![举报 Note](./report-note.png)
+![举报 Note](./assets/report-note.png)
 
 您可以举报单独一条 Note ，或是在扩展的 用户子目录 选择举报这名用户。
 
-![从 Note 举报用户](./report-user-from-note.png)
+![从 Note 举报用户](./assets/report-user-from-note.png)
 
 如果您需要举报一名用户，您也可以在其主页右上角关注按钮旁 更多 按钮打开 用户子目录 选择举报这名用户。
 
-![从用户主页举报](./report-from-user-home.png)
+![从用户主页举报](./assets/report-from-user-home.png)
 
 在举报 Note 时，系统会自动带上该条 Note 的原始链接。请在分割线下方补充上述的 **附带内容**。
 
-![举报 Note 时的详细信息](./report-details.png)
+![举报 Note 时的详细信息](./assets/report-details.png)
 
 在举报用户时，详情输入框是空的，此时您可以直接补充上述的 **附带内容**。
 
