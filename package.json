@@ -8,7 +8,7 @@
     "build": "vitepress build",
     "preview": "vitepress preview"
   },
-  "repository": "git@nya.codes:nyaone/docs.git",
+  "repository": "git@github.com:nyaone/docs.git",
   "author": "NyaOne <support@nya.one>",
   "license": "CC-BY-SA-4.0",
   "private": false,
