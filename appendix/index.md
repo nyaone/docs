@@ -13,11 +13,6 @@
 - [archive.today] （或同服务的其他域名，如 [archive.ph] ）
 - [Wayback Machine]
 
-如果您担心隐私信息泄露，可以使用我们自己部署的 ArchiveBox 服务：
-
-- [archive.fis.land]
-
 [archive.today]: https://archive.today/
 [archive.ph]: https://archive.ph/
 [Wayback Machine]: https://web.archive.org/
-[archive.fis.land]: https://archive.fis.land/add/
