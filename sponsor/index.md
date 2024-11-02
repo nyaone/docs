@@ -20,6 +20,7 @@
 
 - 以太坊或 ERC20 代币（任意有价值公网均可）： `0x9C8a0A9B5d5b178D73e775a2dC4D52711758C388`
 - 比特币： `bc1qm3y73wa5mnd8sc54lc00pdpjhp6p4t48zr3svc`
+- Tron： `TY4WtJkYbSHUkY6adNtvjJ1y8BGnqKURSA`
 
 ::: tip 别名
 
