@@ -55,6 +55,19 @@ export default defineConfig({
           ],
         },
         {
+          text: "站点功能",
+          items: [
+            {
+              text: "邀请",
+              link: "/invite/",
+            },
+            {
+              text: "检举",
+              link: "/report/",
+            },
+          ],
+        },
+        {
           text: "周边服务",
           collapsed: true,
           items: [
