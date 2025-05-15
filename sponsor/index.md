@@ -57,11 +57,15 @@
 | 友友们的赞助 | 2021年5月25日 | $11.00 |
 | [木子萱🌸]    | 2023年3月12日 | $12.95 |
 | [rosehip]    | 2023年9月5日  | $10    |
-| [Bobby Rong]    | 2024年4月25日 | $100   |
+| [Bobby Rong] | 2024年4月25日 | $100   |
+| [松松松鼠🐿️]  | 2025年3月5日  | $5/月  |
+| [powerfullz] | 2025年3月25日 | $10    |
 
 [木子萱🌸]: https://nya.one/@ooyeep
 [rosehip]: https://nya.one/@rosehip
 [Bobby Rong]: https://nya.one/@bobby285271
+[松松松鼠🐿️]: https://nya.one/@song
+[powerfullz]: https://nya.one/@star
 
 ::: details 加入列表
 
