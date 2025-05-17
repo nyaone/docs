@@ -60,12 +60,14 @@
 | [Bobby Rong] | 2024年4月25日 | $100   |
 | [松松松鼠🐿️]  | 2025年3月5日  | $5/月  |
 | [powerfullz] | 2025年3月25日 | $10    |
+| [Kazuto Iris「摸鱼版」] | 2025年5月17日 | $10 |
 
 [木子萱🌸]: https://nya.one/@ooyeep
 [rosehip]: https://nya.one/@rosehip
 [Bobby Rong]: https://nya.one/@bobby285271
 [松松松鼠🐿️]: https://nya.one/@song
 [powerfullz]: https://nya.one/@star
+[Kazuto Iris「摸鱼版」]: https://nya.one/@hitomi
 
 ::: details 加入列表
 
