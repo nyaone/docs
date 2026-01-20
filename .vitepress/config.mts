@@ -69,7 +69,7 @@ export default defineConfig({
         },
         {
           text: "周边服务",
-          collapsed: true,
+          // collapsed: true,
           items: [
             {
               text: "邀请管理系统",
