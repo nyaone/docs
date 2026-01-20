@@ -71,34 +71,34 @@ export default defineConfig({
           text: "周边服务",
           // collapsed: true,
           items: [
-            {
-              text: "邀请管理系统",
-              link: "/peripheral/join/",
-              items: [
-                {
-                  text: "使用",
-                  link: "/peripheral/join/use/",
-                },
-                {
-                  text: "部署",
-                  link: "/peripheral/join/deploy/",
-                },
-              ],
-            },
-            {
-              text: "MiSSO",
-              link: "/peripheral/misso/",
-              items: [
-                {
-                  text: "使用",
-                  link: "/peripheral/misso/use/",
-                },
-                {
-                  text: "部署",
-                  link: "/peripheral/misso/deploy/",
-                },
-              ],
-            },
+            // {
+            //   text: "邀请管理系统",
+            //   link: "/peripheral/join/",
+            //   items: [
+            //     {
+            //       text: "使用",
+            //       link: "/peripheral/join/use/",
+            //     },
+            //     {
+            //       text: "部署",
+            //       link: "/peripheral/join/deploy/",
+            //     },
+            //   ],
+            // },
+            // {
+            //   text: "MiSSO",
+            //   link: "/peripheral/misso/",
+            //   items: [
+            //     {
+            //       text: "使用",
+            //       link: "/peripheral/misso/use/",
+            //     },
+            //     {
+            //       text: "部署",
+            //       link: "/peripheral/misso/deploy/",
+            //     },
+            //   ],
+            // },
             {
               text: "Matrix 通讯",
               link: "/peripheral/matrix/",
