@@ -50,13 +50,11 @@
 
 Misskey 有内置的 API 文档系统，可以在 [/api-doc](https://nya.one/api-doc) 访问得到，不过请注意不同版本的请求接口可能会有些许变更，当之前的代码不再可用时您可以先尝试排查是否是由站点的版本升级导致。
 
-需要注意的是，因为 Misskey 的接口多而复杂，打开这个内置文档时需要使用客户端整理所有的端点资讯，可能会出现浏览器的阻塞卡顿。如果您的计算机性能不佳，不是很推荐访问这个文档。
-
-Misskey 官方提供了一套[独立的 API 文档系统](https://misskey-hub.net/docs/api/endpoints.html)，相对来说不那么消耗性能，但缺点是它只有日文版本的，您可以酌情参考使用。
+需要注意的是，因为 Misskey 的接口多而复杂，打开这个内置文档时需要使用客户端整理所有的端点资讯，可能会出现浏览器的阻塞卡顿。如果您的计算机性能不佳，请谨慎访问这个文档。
 
 ## SDK
 
-Misskey 官方提供了 JavaScript / TypeScript 使用的 SDK [misskey.js](https://github.com/misskey-dev/misskey.js) ，您可以直接使用。
+Misskey 官方提供了 JavaScript / TypeScript 使用的 SDK [misskey-js](https://github.com/misskey-dev/misskey/tree/master/packages/misskey-js) ，您可以直接使用。
 
 也有一些第三方的 SDK 提供，您可以参照 Misskey Hub 上的 [ライブラリの一覧](https://misskey-hub.net/docs/api/libraries.html)。
 
