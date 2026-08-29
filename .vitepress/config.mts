@@ -240,6 +240,6 @@ export default defineConfig({
   },
 
   sitemap: {
-    hostname: 'https://docs.nya.one',
+    hostname: 'https://classic-docs.nya.one',
   },
 });
